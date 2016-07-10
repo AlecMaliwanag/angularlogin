@@ -13,19 +13,23 @@
 </head>
 <body ng-app="myApp">
 
-	<form ng-controller="myctrl">
-		<h2>login</h2>
-		<input placeholder="what's your name?" id="username" ng-model="loginUserName">
-		<input placeholder="password" id="loginUserPassword" ng-model="loginPassword">
-		<button type="button" ng-click="loginUser()">login</button>
-	</form>
+	<div id="loginOne">
+		<form ng-controller="myctrl">
+			<h2>login</h2>
+			<input placeholder="what's your name?" id="username" ng-model="loginUserName">
+			<input placeholder="password" id="loginUserPassword" ng-model="loginPassword">
+			<button type="button" ng-click="loginUser()">login</button>
+		</form>
+	</div>
 
-	<form ng-controller="userctrl">
-		<h2>register user</h2>
-		<input placeholder="what's your name?" id="newUsername" ng-model="username">
-		<input placeholder="password" id="newPassword" ng-model="password">
-		<button type="button" ng-click="registerUser()">register</button>
-	</form>
+	<div id="registerTwo">
+		<form ng-controller="userctrl">
+			<h2>register user</h2>
+			<input placeholder="what's your name?" id="newUsername" ng-model="username">
+			<input placeholder="password" id="newPassword" ng-model="password">
+			<button type="button" ng-click="registerUser()">register</button>
+		</form>
+	</div>
 
 
 
